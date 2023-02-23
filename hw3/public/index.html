@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cheesecake Order</title>
+    <link rel="stylesheet" href="stylesheets/CSSLearning.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cheesecake Order Form</h1>
+    </header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Berry_cheesecake.jpg/1200px-Berry_cheesecake.jpg?20100502223816"
+        alt="Berry Cheesecake" width="300" height="200">
+    <h2 id="orderPrompt">Order Here:</h2>
+    <div class="divOrder">
+        <div>
+            <h3>Toppings:</h3>
+            <input type="radio" id="berry" name="topping" value="berry">
+            <label for="berry">Berry</label>
+            <input type="radio" id="chocolate" name="topping" value="chocolate">
+            <label for="chocolate">Chocolate</label>
+            <input type="radio" id="classic" name="topping" value="classic">
+            <label for="classic">Classic</label>
+        </div>
+        <div>
+            <h3>Amount:</h3>
+            <select id="amountDD" class="dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <p>Notes:</p>
+        <textarea id="noteTA" name="noteText" cols="75" rows="5"
+            placeholder="Enter any special instruction here"></textarea>
+        <br>
+        <button id="orderButton" class="button">Order</button>
+    </div>
+    <div id="orderList">
+        <!--External resource: https://www.w3schools.com/howto/howto_css_dropdown.asp
+        To create a hoverable dropdown menu
+        -->
+        <label for="recordDD">Total Orders in </label>
+        <div class="dropdown">
+        <button class="button" id="monthButton">Jan</button>
+            <div class="dropdown-content">
+                <button class="month" id="Jan">Jan</button>
+                <button class="month" id="Feb">Feb</button>
+                <button class="month" id="Mar">Mar</button>
+                <button class="month" id="Apr">Apr</button>
+                <button class="month" id="May">May</button>
+                <button class="month" id="Jun">Jun</button>
+                <button class="month" id="Jul">Jul</button>
+                <button class="month" id="Aug">Aug</button>
+                <button class="month" id="Sep">Sep</button>
+                <button class="month" id="Oct">Oct</button>
+                <button class="month" id="Nov">Nov</button>
+                <button class="month" id="Dec">Dec</button>
+            </div>
+        </div>
+        <br>
+        <ul class="list">
+            <li>15 Berry</li>
+            <li>20 Chocolate</li>
+            <li>45 Classic</li>
+        </ul>
+    </div>
+</body>
+
+</html>
